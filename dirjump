@@ -186,5 +186,5 @@ else
 		# https://askubuntu.com/a/97766/356625
 		[[ "${__dirjump_prev_wd:=$PWD}" != "$PWD" ]] && __propose_dir_path; __dirjump_prev_wd="$PWD"
 	}
-	PROMPT_COMMAND="$PROMPT_COMMAND;__dirjump_hook"
+	PROMPT_COMMAND="__dirjump_hook"
 fi
